@@ -22,7 +22,7 @@ const Dropdown = ({ options, selected, onSelectedChange, message }) => {
 
   const renderedOption = options.map(option => {
     if (selected === option) {
-      return;
+      return null;
     }
 
     return (

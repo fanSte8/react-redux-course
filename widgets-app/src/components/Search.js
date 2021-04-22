@@ -28,10 +28,9 @@ const Search = () => {
         }
       });
 
-      search();
-
       setResults(data.query.search);
     }
+    search();
   }, [debouncedTerm]);
 
   const renderedResults = results.map(result => {
